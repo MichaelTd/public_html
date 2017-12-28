@@ -1,0 +1,5 @@
+AddHandler cgi-script .cgi .py .pl .sh .bin
+Options +ExecCGI
+Options +FollowSymLinks
+Options +Indexes
+Options +Includes
