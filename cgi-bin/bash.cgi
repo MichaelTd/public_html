@@ -1,37 +1,28 @@
 #!/usr/bin/env bash
 
-echo -e "Content-Type: text/html;charset=utf-8\n\n"
-echo -e "<!DOCTYPE html>"
-echo -e "<html lang=\"en\">"
-echo -e "<head>"
-echo -e "<title>~/paperjam</title>"
-echo -e "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>"
-echo -e "<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js\"></script>"
-echo -e "<link href=\"../css/css.css\" rel=\"stylesheet\" type=\"text/css\">"
-echo -e "<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>"
-echo -e "<script src=\"../js/js.js\"></script>"
-echo -e "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
-echo -e "</head>"
-echo -e "<body>"
-echo -e "<div class=\"container-fluid\">"
-echo -e "<h3>Bash CGI script</h3>"
-echo -e "<p class=\"text-vertical-center\">&nbsp;</p>"
-echo -e "<h6><b>`basename ${BASH_SOURCE[0]}` says:</b>Hello CGI!</h6>"
-echo -e "<h6><b>UNIX Epoch is:</b> `date +%s`</h6>"
-echo -e "<h6><b>Date is:</b> `date`</h6>"
-echo -e "<h6><b>The System is:</b> `uname -a`</h6>"
-echo -e "<a href="../">back</a>"
-echo -e "</div>"
-echo -e "<footer>"
-echo -e "<p>"
-echo -e "<a href=\"https://plus.google.com/u/0/109449761845014157264\"><i class=\"fa fa-google-plus fa-fw fa-1x\"></i></a>"
-echo -e "<a href=\"http://www.facebook.com/michael.tsouchlarakis\"><i class=\"fa fa-facebook fa-fw fa-1x\"></i></a>"
-echo -e "<a href=\"https://github.com/MichaelTd\"><i class=\"fa fa-github fa-fw fa-1x\"></i></a>"
-echo -e "<a href=\"https://www.linkedin.com/in/michael-tsouchlarakis/\"><i class=\"fa fa-linkedin fa-fw fa-1x\"></i></a>"
-echo -e "<a href=\"https://twitter.com/tsouchlarakis\"><i class=\"fa fa-twitter fa-fw fa-1x\"></i></a>"
-echo -e "<a href=\"http://codepen.io/TdMichael/\"><i class=\"fa fa-codepen fa-1x\"></i></a>"
-echo -e "<a href=\"https://www.freecodecamp.com/michaeltd/\"><i class=\"fa fa-free-code-camp fa-fw fa-1x\"></i></a>"
-echo -e "<a href=\"mailto:tsouchlarakis@gmail.com\"><i class=\"fa fa-envelope fa-fw fa-1x\"></i></a>"
-echo -e "<a href=\"https://www.minds.com/michaeltsouchlarakis\">TDM</a>"
-echo -e "<script type=\"text/javascript\">var year = new Date();document.write(year.getFullYear());</script>"
-echo -e "</p></footer></body></html>"
+evs=( CONTEXT_DOCUMENT_ROOT CONTEXT_PREFIX DOCUMENT_ROOT GATEWAY_INTERFACE HTTP_ACCEPT HTTP_ACCEPT_ENCODING HTTP_ACCEPT_LANGUAGE HTTP_CACHE_CONTROL HTTP_CONNECTION HTTP_COOKIE HTTP_HOST HTTP_UPGRADE_INSECURE_REQUESTS HTTP_USER_AGEND OLDPWD PATH PWD QUERY_STRING REMOTE_ADDR REMOTE_PORT REQUEST_METHOD REQUEST_SCHEME REQUEST_URI SCRIPT_FILENAME SCRIPT_NAME SERVER_ADDR SERVER_ADMIN SERVER_NAME SERVER_PORT SERVER_PROTOCOL SERVER_SIGNATURE SERVER_SOFTWARE SHLVL UNIQUE_ID )
+
+printf "Content-Type: text/html; charset=utf-8\n\n"
+
+printf "<html lang='en'>"
+
+cat ../head.html
+
+printf "<body><div class='container-fluid'><hr/><h4>Bash CGI script</h4><hr/>"
+
+printf "<h6><b>%s says : </b>Hello CGI! <b> \
+  UNIX Epoch is : </b> %s <b> \
+  Date is : </b> %s <b> \
+  The System is : </b> %s</h6><hr/>" "$(basename ${BASH_SOURCE[0]})" "$(date +%s)" "$(date +%Y/%m/%d\ %H:%M:%S)" "$(uname -snrp)"
+
+printf "<h4>Environment variables</h4><hr/>"
+
+for i in ${evs[@]}; do
+  printf "<small><b> %s </b> = %s </small>" "${i}" "${!i}"
+done
+
+printf "<hr/><br/><a href="../">back</a></div>"
+
+cat ../foot.html
+
+printf "</body></html>"
