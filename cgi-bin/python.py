@@ -8,4 +8,4 @@ print("<h1>" + os.name + "</h1>")
 
 print("<h1>" + sys.argv[0] + " says ... Hello CGI!</h1>")
 
-print("<h1><a href=\"./\">back</a></h1>")
+print("<h1><a href=\"../\">back</a></h1>")

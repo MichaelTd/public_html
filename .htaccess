@@ -1,5 +1,13 @@
 AddHandler cgi-script .cgi .py .pl .sh .bin
-Options +ExecCGI
-Options +FollowSymLinks
-Options +Indexes
-Options +Includes
+ErrorDocument 404 ~/public_html/404.html
+
+#    400 Bad Request
+#    401 Authorization Required
+#    403 Forbidden Page
+#    404 File not Found
+#    500 Internal Error
+
+#Options +ExecCGI
+#Options +FollowSymLinks
+#Options +Indexes
+#Options +Includes
