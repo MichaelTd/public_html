@@ -2,7 +2,7 @@
 
 %list = ('SERVER_SOFTWARE',   'The server software is: ',
          'SERVER_NAME',       'The server hostname, DNS alias, or IP address is: ',
-         'GATEWAY_INTERFACE', 'The CGI specification revision is: ',   
+         'GATEWAY_INTERFACE', 'The CGI specification revision is: ',
          'SERVER_PROTOCOL',   'The name and revision of info protocol is: ',
          'SERVER_PORT',       'The port number for the server is: ',
          'REQUEST_METHOD',    'The info request method is: ',
