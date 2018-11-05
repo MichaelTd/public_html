@@ -15,14 +15,13 @@ function print_head {
 }
 
 function print_footer {
-  printf "<footer><p><a href='https://plus.google.com/u/0/109449761845014157264'><i class='fa fa-google-plus fa-fw fa-1x'></i></a>"
-  printf "<a href='http://www.facebook.com/michael.tsouchlarakis'><i class='fa fa-facebook fa-fw fa-1x'></i></a>"
-  printf "<a href='https://github.com/MichaelTd'><i class='fa fa-github fa-fw fa-1x'></i></a>"
-  printf "<a href='https://www.linkedin.com/in/michael-tsouchlarakis/'><i class='fa fa-linkedin fa-fw fa-1x'></i></a>"
-  printf "<a href='https://twitter.com/tsouchlarakis'><i class='fa fa-twitter fa-fw fa-1x'></i></a>"
-  printf "<a href='http://codepen.io/TdMichael/'><i class='fa fa-codepen fa-1x'></i></a>"
-  printf "<a href='https://www.freecodecamp.com/michaeltd/'><i class='fa fa-free-code-camp fa-fw fa-1x'></i></a>"
-  printf "<a href='mailto:tsouchlarakis@gmail.com'><i class='fa fa-envelope fa-fw fa-1x'></i></a>"
-  printf "<a href='https://www.minds.com/michaeltsouchlarakis'>TDM</a>"
-  printf "<script type='text/javascript'>var year = new Date();document.write(year.getFullYear());</script></p></footer>"
+  printf "<footer><a href='https://plus.google.com/u/0/109449761845014157264'><i class='fa fa-google-plus fa-fw fa-1x'></i> </a>"
+  printf "<a href='https://www.linkedin.com/in/michael-tsouchlarakis/'><i class='fa fa-linkedin fa-fw fa-1x'></i> </a>"
+  printf "<a href='https://twitter.com/tsouchlarakismd'><i class='fa fa-twitter fa-fw fa-1x'></i> </a>"
+  printf "<a href='https://github.com/michaeltd'><i class='fa fa-github fa-fw fa-1x'></i> </a>"
+  printf "<a href='http://codepen.io/tdmichael/'><i class='fa fa-codepen fa-1x'></i> </a>"
+  printf "<a href='https://www.freecodecamp.com/michaeltd/'><i class='fa fa-free-code-camp fa-fw fa-1x'></i> </a>"
+  printf "<script type='text/javascript'>var year = new Date();document.write(year.getFullYear());</script>"
+  printf "<a href='https://dev.to/michaeltd'> <img src='https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg' alt=\"Michael DT's DEV Profile\" height='30' width='30' /> </a>"
+  printf "<script type='text/javascript'>var lm = new Date(document.lastModified);document.write('(Last Update: ' + lm.getFullYear() + '/' + (lm.getMonth()+1) + '/' + lm.getDate()+ ')');</script></footer>"
 }

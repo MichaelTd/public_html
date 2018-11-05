@@ -2,6 +2,14 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Bungee+Shade|Bungee+Inline");
 
+body {
+  background-image: url('https://img.purch.com/rc/1920x1200/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzA1NC8zMTEvb3JpZ2luYWwvbm9ydGhlYXN0LXVzYS0xOTIwLmpwZw==');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
 .container-fluid {
   min-height: 90vh;
 }
