@@ -2,3 +2,6 @@
 old/*
 *.bin
 private
+resume.html
+css/resume.css
+*.pdf

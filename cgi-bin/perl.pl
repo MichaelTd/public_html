@@ -1,4 +1,4 @@
-#!/usr/bin/env perl
+#!/usr/bin/perl
 
 %list = ('SERVER_SOFTWARE',   'The server software is: ',
          'SERVER_NAME',       'The server hostname, DNS alias, or IP address is: ',

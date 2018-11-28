@@ -7,6 +7,7 @@ function print_headers {
 function print_head {
   printf "<head><title>${1}</title>"
   printf "<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>"
+  printf "<link rel='shortcut icon' href='../assets/favicon.ico'>"
   printf "<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>"
   printf "<link href='../css/css.css' rel='stylesheet' type='text/css'>"
   printf "<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>"
