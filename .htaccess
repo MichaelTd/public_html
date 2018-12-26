@@ -1,5 +1,5 @@
 AddHandler cgi-script .cgi .py .pl .sh .bin
-ErrorDocument 404 ~/404.html
+ErrorDocument 404 /~paperjam/errors/404.html
 
 #    400 Bad Request
 #    401 Authorization Required
