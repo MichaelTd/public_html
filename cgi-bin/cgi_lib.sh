@@ -18,7 +18,7 @@ function print_head {
 function print_footer {
   printf "<footer>
           <a href='https://plus.google.com/u/0/109449761845014157264'><i class='fa fa-google-plus fa-fw fa-1x'></i></a>
-          <a href='https://www.linkedin.com/in/michael-tsouchlarakis/'><i class='fa fa-linkedin fa-fw fa-1x'></i></a>
+          <a href='https://www.linkedin.com/in/michaeltd/'><i class='fa fa-linkedin fa-fw fa-1x'></i></a>
           <a href='https://twitter.com/tsouchlarakismd'><i class='fa fa-twitter fa-fw fa-1x'></i></a>
           <a href='https://github.com/michaeltd'><i class='fa fa-github fa-fw fa-1x'></i></a>
           <a href='https://codepen.io/michaeltd/'><i class='fa fa-codepen fa-1x'></i></a>
