@@ -18,14 +18,9 @@ function print_head {
 
 function print_footer {
   printf "<footer>
-          <a href='https://plus.google.com/u/0/109449761845014157264'><i class='fab fa-google-plus fa-fw fa-1x'></i></a>
-          <a href='https://www.linkedin.com/in/michaeltd/'><i class='fab fa-linkedin fa-fw fa-1x'></i></a>
           <a href='https://twitter.com/tsouchlarakismd'><i class='fab fa-twitter fa-fw fa-1x'></i></a>
           <a href='https://github.com/michaeltd'><i class='fab fa-github fa-fw fa-1x'></i></a>
-          <a href='https://codepen.io/michaeltd/'><i class='fab fa-codepen fa-1x'></i></a>
-          <a href='https://www.freecodecamp.com/michaeltd/'><i class='fab fa-free-code-camp fa-fw fa-1x'></i></a>
-          <script type='text/javascript'>var year = new Date();document.write(year.getFullYear());</script>
           <a href='https://dev.to/michaeltd'><i class='fab fa-dev' title='michaeltd DEV Profile'></i></a>
-          <script type='text/javascript'>var lm = new Date(document.lastModified);document.write('(Last Update: ' + lm.getFullYear() + '/' + (lm.getMonth()+1) + '/' + lm.getDate()+ ')');</script>
+          <script type='text/javascript'>var year = new Date();document.write(year.getFullYear());</script>
           </footer>"
 }
