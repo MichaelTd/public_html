@@ -13,7 +13,6 @@ printf "<head><title>cgi env vars</title>
   <script defer src='https://use.fontawesome.com/releases/v5.6.3/js/all.js' integrity='sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1' crossorigin='anonymous'></script>
   <link href='../css/css.css' rel='stylesheet' type='text/css'>
   <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
-  <script src='../js/js.js'></script>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'></head>"
 
 printf "<body style='background-image: url(../assets/sepp-rutz-1310405-unsplash.jpg);'><div class='container-fluid'>"

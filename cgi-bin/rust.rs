@@ -40,16 +40,15 @@ fn main() {
     println!("<html lang='en'>");
 
     println!("<head><title>cgi env vars</title>
-          <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
-          <link rel='shortcut icon' href='../assets/favicon.ico'>
-          <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-          <script defer src='https://use.fontawesome.com/releases/v5.6.3/js/all.js' integrity='sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1' crossorigin='anonymous'></script>
-          <link href='../css/css.css' rel='stylesheet' type='text/css'>
-          <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
-          <script src='../js/js.js'></script>
-          <meta name='viewport' content='width=device-width, initial-scale=1.0'></head>");
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+        <link rel='shortcut icon' href='../assets/favicon.ico'>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+        <script defer src='https://use.fontawesome.com/releases/v5.6.3/js/all.js' integrity='sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1' crossorigin='anonymous'></script>
+        <link href='../css/css.css' rel='stylesheet' type='text/css'>
+        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'></head>");
 
-    println!("<body><div class='container-fluid'>");
+    println!("<body style='background-image: url(../assets/sepp-rutz-1310405-unsplash.jpg);'><div class='container-fluid'>");
 
     println!("<h4>Environment variables</h4><hr/>");
 
@@ -60,11 +59,11 @@ fn main() {
     println!("<hr/><br/><a href='../'>back</a></div>");
 
     println!("<footer>
-          <a href='https://twitter.com/tsouchlarakismd'><i class='fab fa-twitter fa-fw fa-1x'></i></a>
-          <a href='https://github.com/michaeltd'><i class='fab fa-github fa-fw fa-1x'></i></a>
-          <a href='https://dev.to/michaeltd'><i class='fab fa-dev' title='michaeltd DEV Profile'></i></a>
-          <script type='text/javascript'>var year = new Date();document.write(year.getFullYear());</script>
-          </footer>");
+        <a href='https://twitter.com/tsouchlarakismd'><i class='fab fa-twitter fa-fw fa-1x'></i></a>
+        <a href='https://github.com/michaeltd'><i class='fab fa-github fa-fw fa-1x'></i></a>
+        <a href='https://dev.to/michaeltd'><i class='fab fa-dev' title='michaeltd DEV Profile'></i></a>
+        <script type='text/javascript'>var year = new Date();document.write(year.getFullYear());</script>
+        </footer>");
 
     println!("</body></html>");
 }
