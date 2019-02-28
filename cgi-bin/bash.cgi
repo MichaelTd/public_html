@@ -15,7 +15,7 @@ printf "<head><title>cgi env vars</title>
   <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'></head>"
 
-printf "<body style='background-image: url(../assets/sepp-rutz-1310405-unsplash.jpg);'><div class='container-fluid'>"
+printf "<body><div class='container-fluid'>"
 
 printf "<h4>Environment variables</h4><hr/>"
 
@@ -34,4 +34,4 @@ printf "<footer>
   <a href='https://github.com/michaeltd'><i class='fab fa-github fa-fw fa-1x'></i></a>
   <a href='https://dev.to/michaeltd'><i class='fab fa-dev' title='michaeltd DEV Profile'></i></a>
   <script type='text/javascript'>var year = new Date();document.write(year.getFullYear());</script>
-  </footer></body></html>"
+  </footer><script src='../js/noise.js'></script></body></html>"
