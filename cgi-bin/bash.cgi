@@ -6,7 +6,7 @@ printf "Content-Type: text/html; charset=utf-8\n\n"
 
 printf "<html lang='en'>"
 
-printf "<head><title>cgi env vars</title>
+printf "<head><title>bash cgi env vars</title>
   <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
   <link rel='shortcut icon' href='../assets/favicon.ico'>
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
@@ -27,7 +27,7 @@ done
 
 printf "</div>"
 
-printf "<hr/><br/><a href="../">back</a></div>"
+printf "<hr/><br/><a href='../'>back</a></div>"
 
 printf "<footer>
   <a href='https://twitter.com/tsouchlarakismd'><i class='fab fa-twitter fa-fw fa-1x'></i></a>

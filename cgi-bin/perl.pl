@@ -1,5 +1,40 @@
 #!/usr/bin/perl
 
+# declare -a evs=( CONTEXT_
+#                  DOCUMENT_ROOT
+#                  CONTEXT_PREFIX
+#                  DOCUMENT_ROOT
+#                  GATEWAY_INTERFACE
+#                  HTTP_ACCEPT
+#                  HTTP_ACCEPT_ENCODING
+#                  HTTP_ACCEPT_LANGUAGE
+#                  HTTP_CACHE_CONTROL
+#                  HTTP_CONNECTION
+#                  HTTP_COOKIE
+#                  HTTP_HOST
+#                  HTTP_UPGRADE_INSECURE_REQUESTS
+#                  HTTP_USER_AGEND
+#                  OLDPWD
+#                  PATH
+#                  PWD
+#                  QUERY_STRING
+#                  REMOTE_ADDR
+#                  REMOTE_PORT
+#                  REQUEST_METHOD
+#                  REQUEST_SCHEME
+#                  REQUEST_URI
+#                  SCRIPT_FILENAME
+#                  SCRIPT_NAME
+#                  SERVER_ADDR
+#                  SERVER_ADMIN
+#                  SERVER_NAME
+#                  SERVER_PORT
+#                  SERVER_PROTOCOL
+#                  SERVER_SIGNATURE
+#                  SERVER_SOFTWARE
+#                  SHLVL
+#                  UNIQUE_ID )
+
 %list = ('SERVER_SOFTWARE',   'The server software is: ',
          'SERVER_NAME',       'The server hostname, DNS alias, or IP address is: ',
          'GATEWAY_INTERFACE', 'The CGI specification revision is: ',
@@ -26,16 +61,34 @@
 #  print "$_ : $ENV{$_}<br />";
 #}
 
-print "Content-type: text/html","\n\n";
-print "<html>", "\n";
-print "<head><title>List of Environment Variables</title></head>", "\n";
-print "<body>", "\n";
-print "<h4>", "CGI Environment Variables", "</h4>", "<hr>", "\n";
+print "Content-type: text/html; charset=utf-8","\n\n";
+
+print "<html lang='en'>", "\n";
+print "<head><title>perl cgi env vars</title>", "\n\n";
+print "<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>";
+print " <link rel='shortcut icon' href='../assets/favicon.ico'>";
+print " <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>";
+print " <script defer src='https://use.fontawesome.com/releases/v5.6.3/js/all.js' integrity='sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1' crossorigin='anonymous'></script>";
+print " <link href='../css/css.css' rel='stylesheet' type='text/css'>";
+print " <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>";
+print " <meta name='viewport' content='width=device-width, initial-scale=1.0'></head>";
+
+print "<body><div class='container-fluid'>";
+print " <h4>Environment variables</h4><hr/>";
+print " <div style='background-color:rgba(0,0,0,0.7);font-color:lightgrey;'>";
+
 while ( ($env_var, $info) = each %list ) {
-  print $info, "<b>", $ENV{$env_var}, "</b>", "<br/>","\n";
+  print " <small><b>", $info, " ", $env_var, " = ", "</b> ", $ENV{$env_var}, "</small>", "<br/>","\n";
 }
-print "<hr>", "\n";
-print "<a href=\"../\">back</a><br/>";
-print "</body>", "</html>", "\n";
+
+print " </div>";
+print " <hr/><br/><a href='../'>back</a></div>";
+
+print "<footer>";
+print " <a href='https://twitter.com/tsouchlarakismd'><i class='fab fa-twitter fa-fw fa-1x'></i></a>";
+print " <a href='https://github.com/michaeltd'><i class='fab fa-github fa-fw fa-1x'></i></a>";
+print " <a href='https://dev.to/michaeltd'><i class='fab fa-dev' title='michaeltd DEV Profile'></i></a>";
+print " <script type='text/javascript'>var year = new Date();document.write(year.getFullYear());</script>";
+print "</footer><script src='../js/noise.js'></script></body></html>";
 
 exit (0);
