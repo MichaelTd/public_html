@@ -8,7 +8,7 @@ printf "<html lang='en'>"
 
 printf "<head><title>bash cgi env vars</title>
   <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
-  <link rel='shortcut icon' href='../assets/favicon.ico'>
+  <link rel='shortcut icon' href='../img/favicon.ico'>
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
   <script defer src='https://use.fontawesome.com/releases/v5.6.3/js/all.js' integrity='sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1' crossorigin='anonymous'></script>
   <link href='../css/css.css' rel='stylesheet' type='text/css'>

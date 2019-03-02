@@ -66,7 +66,7 @@ print "Content-type: text/html; charset=utf-8","\n\n";
 print "<html lang='en'>", "\n";
 print "<head><title>perl cgi env vars</title>", "\n\n";
 print "<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>";
-print " <link rel='shortcut icon' href='../assets/favicon.ico'>";
+print " <link rel='shortcut icon' href='../img/favicon.ico'>";
 print " <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>";
 print " <script defer src='https://use.fontawesome.com/releases/v5.6.3/js/all.js' integrity='sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1' crossorigin='anonymous'></script>";
 print " <link href='../css/css.css' rel='stylesheet' type='text/css'>";
