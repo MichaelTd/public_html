@@ -9,3 +9,20 @@ ErrorDocument 404 /~paperjam/errors/404.html
 #Options +FollowSymLinks
 #Options +Indexes
 #Options +Includes
+
+<FilesMatch "\.(html|htm|js|css|gif|ico|jpe|jpeg|jpg|png|pdf|txt)$">
+  #https://wp-mix.com/disable-caching-htaccess/
+  <IfModule mod_expires.c>
+	ExpiresActive Off
+  </IfModule>
+  <IfModule mod_headers.c>
+	FileETag None
+	Header unset ETag
+	Header unset Pragma
+	Header unset Cache-Control
+	Header unset Last-Modified
+	Header set Pragma "no-cache"
+	Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+	Header set Expires "Mon, 10 Apr 1972 00:00:00 GMT"
+  </IfModule>
+</FilesMatch>
